@@ -15,73 +15,70 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircleAvatar(
+              CircleAvatar(
                 backgroundImage: AssetImage('images/manaswini.jpg'),
                 radius: 50,
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text(
+              Text(
                 'Manaswini',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text(
-                'Sporadic is my word',
+              Text(
+                'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white60,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20,
+                    color: Colors.white70,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.5),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(3),
-                  color: Colors.white,
-                ),
-                padding: const EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 20,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text(
-                      'Find me on Twitter',
-                      style: TextStyle(),
-                    )
-                  ],
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+12 123 456 789 012',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 17.0,
+                      color: Colors.blueGrey,
+                    ),
+                  ),
                 ),
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(3),
-                  color: Colors.white,
-                ),
-                padding: const EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 20,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text(
-                      'Find me on Twitter',
-                      style: TextStyle(),
-                    )
-                  ],
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                // padding: const EdgeInsets.all(10.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'myemail@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 17.0,
+                      color: Colors.blueGrey,
+                    ),
+                  ),
                 ),
               ),
             ],
